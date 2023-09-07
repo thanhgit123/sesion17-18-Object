@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let student={
+            id:1,
+            name: 'Nguyen Van As',
+            gender: 'nam',
+            age:20,
+            mark:8,
+        }
+        let newStudent={
+            id:2,
+            name:'Nuoc nho mat',
+            gender:'doan xem',
+            age:10,
+            mark:4,
+        }   
+        // let array=[student,newStudent];
+        // console.log(array[1].id);
+        // console.log(array[1].name);
+         
+        // if(student.mark > newStudent.mark){
+        //     console.log(student);
+        // }else{
+        //     console.log(newStudent);
+        // }
+
+        let newStudent2={
+            id:4,
+            name:'Can loi giai thich',
+            gender: '?',
+            age:23,
+            mark:9,
+        }
+        let array=[student,newStudent,newStudent2];
+        let total= (student.mark + newStudent.mark + newStudent2.mark)/3;
+        if(total>7.5){
+            console.log("kha banh");
+        }
+        if(total>5 && total<7.5){
+            console.log("lop trung binh");
+        }
+        if(total<5){
+            console.log("yeu qua");
+        }
+    </script>
+</body>
+</html>

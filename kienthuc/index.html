@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        OPP: lập trình hướng đối tượng
+            *tính chất
+                -đóng gói
+                -kế thừa
+                - trừu tượng
+                -đa hình
+        Object: đối tượng
+            - gồm thuộc tính(property) và phương thức (method);
+            - là kiểu dữ liệu phức tạp- refernce type- kiểu tham chiếu
+            - chứa các cặp key(thuộc tính) và value(ngăn cách bởi dấu phẩy,có thể truyền kiểu dữ liệu khác nhau)
+            
+            - các cách để khởi tạo đối tượng
+                1.let, const, var
+                2. function
+                3. class
+            ****************
+            CRUD với object
+            C:creat
+                -để thêm thuộc tính cho đối tượng thì đối tượng.thuộc tính="giá trị"
+            R: Read 
+                -for-in : trả về key(tên thuộc tính của đối tượng)
+            U: update
+                -đối tượng.thuộc tính gán lại giá trị cho nó
+            D: delete
+                - xóa thuộc tính
+                - đối tượng.thuộc tính(xóa key)
+            *****************
+            Các cách Clone với Object
+
+
+        
+            DEEP CLONE && SHALLOW CLONE(clone nông)
+            *.SHALLOW CLONE(clone nông)
+                - Object.asign({},obj2)
+            1.toán tử Spread
+            *. DEEP CLONE(clone hết)
+
+     -->
+     <script>
+        // let student={
+        //     name:"Hiều",
+        //     age: 50,
+        //     name: "hao",
+        // }
+        // student.address="HP"
+        // console.log("student",student);
+
+        // for(const abc in student){
+        //     if(student[abc]==50){
+        //         console.log(abc);
+        //     }
+        // }
+
+
+
+        //vd deep clone
+        // let obj1={
+        //     name:"hoa",
+        //     infor:{
+        //         age:24,
+        //     }
+        // } 
+        // let obj2=JSON.parse(JSON.stringify(obj1));
+        // obj1.infor.age=26;
+        // console.log(obj2);
+
+
+
+        // vd shallow clone
+        // let obj1={
+        //     name:"hoa",
+        //     infor:{
+        //         age:24,
+        //     }
+        // } 
+        // let obj2={...obj1};
+        // obj1.name="vnpt";
+        // obj1.infor.age=21;
+        // console.log(obj2.infor.age);
+
+            // vd
+        // let arr1=[6,7,8];
+        // let arr2=[...arr1];
+        // arr1.splice(1,1);
+        // console.log(arr2);
+
+        // vd
+        // let newObj={
+        //     name:"hao"
+            
+        // }
+        // newObj[name]="kai";
+        // console.log(newObj);
+          
+
+        // vd object assign
+    //     let obj1={
+    //         name:"hạ"
+    //     }
+    //     let obj2={
+    //         age:23,
+    //     }
+    //     let obj3=Object.assign({},obj1,obj2);
+    //     console.log(obj3);
+    //  </script>
+</body>
+</html>
